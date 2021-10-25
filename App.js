@@ -20,7 +20,7 @@ const PendingView=()=>(
   </View>
 )
 
-
+//hii this is 
 
 const App =()=>{
 
