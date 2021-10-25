@@ -31,11 +31,21 @@ const App =()=>{
       const options= {quality: 0.9, base64: false}
         const data= await camera.takePictureAsync(options)
         setImage(data.uri)
+        // const filePath= data.uri;
+        // const newFilePath= RNFS.ExternalDirectoryPath + '/MyTest.jpg';
+        // RNFS.moveFile(filePath, newFilePath)
+        // .then(()=>{
+        //   console.log('IMAGE MOVED')
+        // })
+        // .catch(error=>{
+        //   console.log(error)
+        // })
+        console.log(data.uri)
     }catch(error){
       console.warn(error)
     }
   }
-
+// hii this is comment
   return(
    <View style={styles.container}>
    {image ? (
